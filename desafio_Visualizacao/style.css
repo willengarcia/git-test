@@ -106,7 +106,7 @@ body {
     height: 25px;
     transform: rotate(45deg);
     z-index: -1;
-    background-color: red;
+    background-color: var(--cor-dark-blue);
     display: block;
 }
 .drop-up > img {
