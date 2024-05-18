@@ -52,37 +52,73 @@ body {
     font-weight: 500;
     color: var(--cor-desaturada-blue);
 }
-.infor {
-    display: grid;
-    grid-template-columns: 3rem 1.5fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0 1rem;
+
+.infor { 
+    display: inline-block;
 }
 .infor > p {
-    grid-column-start: 2;
-    grid-column-end: 3;
     font-size: .8rem;
     font-weight: 500;
+    margin-left: 4rem;
     color: var(--cor-desaturada-blue);
 }
 .infor > img {
     border-radius: 50%;
     width: 3rem;
+    margin-bottom: -1.5rem;
 }
-.infor > #compartilhar {
+.infor > h2 {
+    font-size: 1rem;
+    display: inline-block;
+    margin-left: 1rem;
+}
+#compartilhar {
     border-radius: 50%;
     width: 1.5rem;
     height: 1.5rem;
     padding: .5rem;
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    align-self: flex-end;
-    justify-self: flex-end;
+    float: right;
+    
 }
-.infor > h2 {
-    font-size: 1rem;
-    align-self: center;
+
+
+.drop-up {
+    background-color: var(--cor-dark-blue);
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: max-content;
+    margin: auto;
+    padding: .5rem;
+    left: 4.5em;
+    bottom: 6.5em;
+    display: none;
+}
+.drop-up::after {
+    content: '';
+    position: relative;
+    right: 1rem;
+    top:1.3rem;
+    width: 25px;
+    height: 25px;
+    transform: rotate(45deg);
+    z-index: -1;
+    background-color: red;
+    display: block;
+}
+.drop-up > img {
+    margin: 0 .5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.drop-up > a {
+    color: var(--cor-desaturada-blue);
+}
+.aparece {
+    display: flex;
 }
 @media (max-width:700px) {
     #container {
@@ -90,6 +126,7 @@ body {
         flex-direction: column;
         margin: auto;
         width: 90%;
+        min-width: 350px;
     }
     .imagem-ilustracao {
         width: 100%;
@@ -103,18 +140,4 @@ body {
     .conteudo {
         padding: 0 1.5rem 1.5rem 1.5rem;
     }
-}
-
-.drop-up {
-    background-color: var(--cor-dark-blue);
-    border: 10px;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    padding: .5rem;
-}
-
-li { 
-    list-style: none;
 }
