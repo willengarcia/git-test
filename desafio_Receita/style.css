@@ -22,37 +22,43 @@ body {
 header {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    width: 50%;
+    width: 100%;
     background-color: aliceblue;
-    margin-top: 40px;
-    padding: 3.5% 3.5% 0 3.5%;
+    margin-top: 0px;
+    padding: 0% 3.5% 0 3.5%;
 }
 header img {
     width: 100%;
     margin: auto;
     margin-bottom: 3.5%;
-    border-radius: 15px;
+    border-radius: 0px;
 }
 header > h1 {
+    width: 90%;
+    margin: auto;
     margin-bottom: 3%;
     font-family: "YoungSerif";
 }
 header > p {
+    width: 90%;
+    margin: auto;
     line-height: 1.5em;
 }
 
 main {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    width: 50%;
     padding: 3.5%;
     background-color: aliceblue;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
+    width: 100%;
 }
 div.preparacao {
     background-color: rgb(238, 230, 221);
     padding: 3.5%;
+    width: 90%;
     margin-bottom: 3%;
+    margin: auto;
 }
 div.preparacao > h3 {
     margin-bottom: 2%;
@@ -71,7 +77,9 @@ div.preparacao > ul > li {
 }
 
 div.modo {
-    margin-top: 10%;
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
 }
 div.modo > h2 {
     font-family: "YoungSerif";

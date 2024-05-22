@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+.ultra-regular {
+    font-family: "Ultra", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+* {
+    padding: 0%;
+    margin: 0%;
+}
+body {
+    height: 98vh;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section {
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+picture img{
+    width: 15rem;
+    border-radius: 10px 0 0 10px;
+}
+article {
+    margin: 0 1.5rem;
+}
+h1 {
+    font-family: monospace;
+    font-size: clamp(10px, 4vw, 16px);
+    font-weight: 100;
+    color: rgb(131, 134, 134);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h2{
+    font-size: clamp(18px, 4vw, 28px);
+    margin-bottom: 20px;
+    font-family: "Ultra", serif;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+p {
+    font-size: clamp(10px, 4vw, 16px);
+    color: rgb(70, 68, 68);
+    margin-bottom: 10px;
+}
+.promocao{
+    font-size: clamp(26px, 4vw, 30px);
+    font-weight: 600;
+    color: rgb(46, 95, 46);
+    margin-right: 10px;
+}
+.oferta {
+    font-size: clamp(10px, 4vw, 16px);
+    color: rgb(72, 73, 72);
+    margin-right: 20px;
+    text-decoration: line-through;
+}
+button {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    padding: .3rem 2.5rem;
+    background-color: rgb(46, 95, 46);
+    border-radius: 7px;
+    color: aliceblue;
+    font-weight: 700;
+}
+button img {
+    margin-right: 10px;
+}
+@media (max-width:30rem){
+    section {
+        background-color: white;
+        border-radius: 10px;
+        margin: auto;
+        width: 25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    picture img{
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    h2{
+        font-size: clamp(30px, 20vw, 36px);
+        margin-bottom: 20px;
+    }
+    button{
+        padding: .7rem 5.5rem;
+    }
+}
