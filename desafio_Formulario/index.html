@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <section class="container">
+        <div class="formulario">
+            <h1>Stay updated!</h1>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            <ul>
+                <li>Product discovery and building what matters</li>
+                <li>Measuring to ensure updates are a success</li>
+                <li>And much more!</li>
+            </ul>
+            <form method="get">
+                <div class="entrada">
+                    <span>Valid email required</span>
+                    <label for="email">Email address</label>
+                    <input type="email" name="email" id="email" placeholder="email@company.com">
+                    <button id="submit">Subscribe to monthly newletter</button>
+                </div>
+            </form>
+        </div>
+        <div class="imagem">
+            <picture>
+                <source media="(max-width: 800px)" srcset="images/illustration-sign-up-mobile.svg" type="image/svg">
+                <img src="images/illustration-sign-up-desktop.svg" alt="">
+            </picture>
+        </div>
+    </section>
+</body>
+</html>
