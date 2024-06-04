@@ -100,10 +100,14 @@ span {
         padding: 1rem;
         width: 100%;
         border-radius: 0;
+        padding: 0px;
     }
     .imagem, img {
         order: -1;
         width: 100%;
         margin: auto;
+    }
+    buttom{
+        padding: 1.3rem;
     }
 }
