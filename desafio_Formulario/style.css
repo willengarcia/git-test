@@ -51,7 +51,12 @@ body {
     font-size: 16px;
     margin: 1.5rem auto;
     margin-left: 1rem;
-    list-style: url('images/check.png') inside;
+    padding-left: 0;
+    list-style: url(images/icon-list.svg) inside;
+}
+.formulario li {
+    text-indent: -1em;
+    padding: .5em;
 }
 label {
     display: block;
@@ -62,8 +67,9 @@ label {
 }
 input {
     width: 94%;
+    display: block;
     margin: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     padding: .7rem;
     border-radius: 8px;
     border: 1px solid var(--Grey);
@@ -97,17 +103,20 @@ span {
 @media (max-width: 800px) {
     .container {
         flex-direction: column;
-        padding: 1rem;
         width: 100%;
         border-radius: 0;
         padding: 0px;
+    }
+    .formulario {
+        width: 22rem;
     }
     .imagem, img {
         order: -1;
         width: 100%;
         margin: auto;
     }
-    buttom{
+    button{
         padding: 1.3rem;
+        margin-bottom: 2rem;
     }
 }
