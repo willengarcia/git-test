@@ -74,7 +74,7 @@ input {
     border-radius: 8px;
     border: 1px solid var(--Grey);
 }
-button {
+#submit {
     background-color: var(--Dark-Slate-Grey);
     padding: .7rem;
     border: none;
@@ -89,7 +89,7 @@ img {
 }
 
 input.erro {
-    accent-color: var(--cor-t7omate);
+    border:2px solid var(--cor-t7omate);
 }
 span.erro {
     color: var(--cor-t7omate);
@@ -115,7 +115,7 @@ span {
         width: 100%;
         margin: auto;
     }
-    button{
+    #submit{
         padding: 1.3rem;
         margin-bottom: 2rem;
     }
