@@ -160,6 +160,7 @@ p {
         flex-direction: column;
         gap: 1.5rem;
         margin: auto;
+        width: 90%
     }
     body {
         height: 100dvh;
