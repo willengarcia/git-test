@@ -153,7 +153,7 @@ p {
 .subtitulo img {
     float: right;
 }
-
+/* Media */
 @media (max-width: 860px) {
     .conteudo {
         display: flex;
