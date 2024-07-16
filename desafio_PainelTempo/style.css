@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+.rubik {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
 * {
     padding: 0%;
     margin: 0%;
     color: aliceblue;
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
 }
 :root {
     --Blue: hsl(246, 80%, 60%);
@@ -22,11 +31,13 @@ body {
     height: 98dvh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: column;
     background-color: var(--Very-dark-blue);
 }
 .conteudo {
+    width: 70%;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -66,7 +77,7 @@ li {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
-a {
+a.desativado, a {
     text-decoration: none;
     color: var(--Desaturated-blue);
 }
@@ -129,6 +140,7 @@ a.ativo {
 h2 {
     font-size: 18px;
     display: inline;
+    font-weight: 500;
 }
 h3 {
     font-size: 50px;
@@ -140,4 +152,42 @@ p {
 }
 .subtitulo img {
     float: right;
+}
+
+@media (max-width: 860px) {
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin: 2rem;
+    }
+    body {
+        height: 100dvh;
+        display: block;
+        background-color: var(--Very-dark-blue);
+    }
+    #pessoa {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        padding: 1.5rem;
+        background-color: var(--Blue);
+    }
+    h1 {
+        margin-bottom: 2rem;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    li {
+        margin: 1rem;
+    }
 }
