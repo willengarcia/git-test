@@ -14,7 +14,7 @@ botoes.forEach((el)=>{
         .then(res=>{
             const botao = evt.target
             botao.classList.toggle('ativo')
-            if(botao.innerHTML == 'Daily'){
+            if(botao.id == 'daily'){
                 botoes[1].classList.remove('ativo')
                 botoes[2].classList.remove('ativo')
                 // work
@@ -35,7 +35,7 @@ botoes.forEach((el)=>{
                 // self
                 self.innerHTML = `Previous - ${res[5].timeframes.daily.previous}hrs daily`
                 h3[5].innerHTML = `${res[5].timeframes.daily.current}hrs`
-            }else if(botao.innerHTML == 'Weekly'){
+            }else if(botao.id == 'weekly'){
                 botoes[0].classList.remove('ativo')
                 botoes[2].classList.remove('ativo')
                 // work
@@ -56,7 +56,7 @@ botoes.forEach((el)=>{
                 // self
                 self.innerHTML = `Previous - ${res[5].timeframes.weekly.previous}hrs weekly`
                 h3[5].innerHTML = `${res[5].timeframes.weekly.current}hrs`
-            }else if(botao.innerHTML == 'Monthly'){
+            }else if(botao.id == 'monthly'){
                 botoes[1].classList.remove('ativo')
                 botoes[0].classList.remove('ativo')
                 // work
